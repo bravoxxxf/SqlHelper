@@ -1,0 +1,17 @@
+{
+  "name": "wxhttpserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start server.js --name api --watch='common' --log-date-format='YYYY-MM-DD HH:mm Z'",
+    "start_https": "pm2 start https_server.js --name api_ssl --watch='common' --log-date-format='YYYY-MM-DD HH:mm Z'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.12.0",
+    "restify": "^5.1.0"
+  }
+}
